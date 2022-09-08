@@ -34,19 +34,23 @@ html {
 
 .col-video {
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     background-color: black;
 }
 
 .col-icons {
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
-
-    background-color: rgb(75, 67, 82);
+    background-color: #222222;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 /* UTILITIES */
 img {
@@ -69,6 +73,26 @@ img {
     line-height: 30px;
 }
 
+i.fa-solid {
+    color: white;
+    cursor: pointer;
+}
+
+i.big {
+    font-size: 25px;
+}
+
+
+.text-icon h3 {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+
+
+
 /* MAIN */
 .speaker-view {
     background-color: rgb(59, 59, 59);
@@ -80,12 +104,33 @@ img {
     padding-left: 5px;
 }
 
-.icons-left,
-.icons-center,
-.icons-right {
-    width: 200px;
+/* Toolbar - Footer */
 
-    /* DEBUG */
-    background-color: rgb(178, 90, 171);
-    height: 80px;
+.icons-left,
+.icons-right {
+    width: 10%;
+}
+.icons-center {
+    width: 35%;
+}
+
+.share i {
+    color: green;
+}
+
+.icons-right {
+    background-color: #4a4a4a;
+}
+
+.container-end-meeting {
+    /* position: relative; */
+}
+
+a.end-meeting {
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50%;
+    /* position: absolute;
+    transform: translate(50% , 50%); */
 }
